@@ -145,7 +145,7 @@ Leis de seguro contra incêndio na Califórnia
 ```
 O agente de Reclamações do Cliente permitirá que os clientes consultem o status de suas solicitações de reclamação e criem uma nova solicitação. Você também responderá a perguntas sobre o processo de reclamação e a apólice de seguro, utilizando a base de conhecimento.
 ```
-    <img width="1000" alt="image" src="./screenshots_hands_on_lab/customer/customer-1.png">
+<img width="1000" alt="image" src="./screenshots_hands_on_lab/customer/customer-1.png">
   - Clique **Create**
 
 - Selecione `Model`. Altere o modelo ou mantenha-o como padrão.
@@ -377,7 +377,7 @@ O agente do Processador de Reivindicações auxilia o processador de reivindica�
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/claim_processor_insurance_agent/cp-14.png">
 
 - Na seção **Behavior** adicione as sequintes **Instructions**:
-  ```
+```
  Você começará dando as boas-vindas ao processador de sinistros e exibindo os sinistros em aberto em uma tabela.
 Esta tabela deve incluir o ID do cliente (destacado), número do sinistro, número da apólice, custo estimado, valor segurado e detalhes do veículo. Não exiba duplicatas.
 
@@ -412,7 +412,7 @@ Após selecionar um ID do cliente, busque os detalhes do sinistro e da apólice 
   Não dê os próximos passos. 
 
   Assim que a decisão for tomada, atualize o status da reclamação e envie uma mensagem confirmando que os e-mails foram enviados ao cliente e à equipe financeira..
-  ```
+```
 
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/claim_processor_insurance_agent/cp-15.png">
 
