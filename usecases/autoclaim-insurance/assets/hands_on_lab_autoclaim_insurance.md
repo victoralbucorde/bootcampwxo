@@ -48,15 +48,16 @@ Para as seguradoras, os sinistros recebidos são recuperados automaticamente e v
 
 - Log in na IBM Cloud (cloud.ibm.com). Navegue até o menu superior esquerdo e, em seguida, até a Lista de Recursos. Abra a seção IA/Aprendizado de Máquina. Você verá o serviço **watsonx Orchestrate**. Clique para abrir.
 
-  <img width="1000" alt="image" src="../../../environment-setup/assets/cloud-resource-list.png">
+  <img width="1000" alt="image" src="screenshots_hands_on_lab/cloud-resource-list.png">
+
 
 - Clique no botão "Launch watsonx Orchestrate".
 
-  <img width="1000" alt="image" src="../../../environment-setup/assets/cloud-wxo.png">
+  <img width="1000" alt="image" src="screenshots_hands_on_lab/cloud-wxo.png">
 
 - Bem-vindo ao watsonx Orchestrate. Abra o menu de hambúrguer, clique em **Build** -> **Agent Builder**.
 
-  <img width="1000" alt="image" src="../../../environment-setup/assets/wxo-agent-builder.png">
+  <img width="1000" alt="image" src="screenshots_hands_on_lab/wxo-agent-builder.png">
 
 ### Agente de Informação
 #### Crie o Agente de Informação
