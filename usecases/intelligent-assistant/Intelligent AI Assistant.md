@@ -178,7 +178,13 @@ Por fim, certifique-se de desmarcar a caixa de seleção `Show agent`, como most
 
 ![alt text](images/image6.png)
 
-Vamos agora testar o novo agente. Na janela de visualização, insira uma pergunta para o agente, por exemplo, "Você pode me informar sobre o status das docas do armazém?". Observe como o agente está usando os dados fornecidos para formular sua resposta.
+Vamos agora testar o novo agente. Na janela de visualização, insira uma pergunta para o agente, por exemplo: 
+
+```
+Você pode me informar sobre o status das docas do armazém?
+# O agente irá pergunta sobre qual doca você quer saber. Pode responder "Todas"
+```
+Observe como o agente está usando os dados fornecidos para formular sua resposta.
 
 ![alt text](images/image7.png)
 
@@ -272,6 +278,7 @@ Desmarque a caixa de seleção Mostrar agente, assim como você fez para o agent
 Antes de implantar este novo agente, podemos testar sua funcionalidade inserindo solicitações na janela de visualização. Por exemplo, você pode perguntar:
 ```
 Como lidamos com o excedente do caminhão T001?
+# Se O agente questionar qual o SKU Pode responder 199464599
 ```
 
 ![alt text](images/image13.png)
@@ -293,7 +300,7 @@ Clique em Criar agente e insira o seguinte:
 O Agente Secretário é especializado na criação de e-mails relacionados a tópicos de depósito.
 ```
 
-Em seguida, clique em Criar e adicione o seguinte texto ao campo `Instructions` na seção Comportamento:
+Em seguida, clique em Criar e adicione o seguinte texto ao campo `Instructions` na seção Behavior:
 ```
 Persona:
 Sua persona é a de uma secretária que redige e-mails. Pedirei que você crie um e-mail sobre um tópico específico e você retornará um rascunho textual desse e-mail.
@@ -348,7 +355,12 @@ Este e-mail é para notificá-los de que há 9 unidades do item 765004599 em exc
 Gerenciamento de Armazém
 ```
 
-Desmarque a opção `Show agent`. Em seguida, teste o novo agente com a Visualização, por exemplo, insira "Gerar um e-mail de notificação para a equipe de marketing para o SKU: 8932464599 de 10 unidades". O resultado deve ser semelhante ao da imagem abaixo.
+Desmarque a opção `Show agent`. Em seguida, teste o novo agente com a Visualização, por exemplo, insira:
+
+```
+Gerar um e-mail de notificação para a equipe de marketing para o SKU: 8932464599 de 10 unidades
+``` 
+O resultado deve ser semelhante ao da imagem abaixo.
 
 ![alt text](images/image15.png)
 
@@ -386,6 +398,13 @@ Clique no botão `Add agent`. Como queremos adicionar os agentes que você criou
 
 Aqui você vê todos os três agentes listados que você criou. Queremos que todos eles sejam usados ​​pelo Agente do Gerente de Armazém, então marque cada um deles e clique em `Add to agent`. Observe que é possível que você veja mais do que os três agentes abordados neste laboratório (você pode ter criado agentes de um laboratório diferente ou criado alguns dos seus próprios), portanto, certifique-se de selecionar o conjunto correto de três.
 
+Selecione:
+  - Agente de status de doca
+  - Agente Excedente
+  - Agente Secretário
+
+Clique em `Add to agent`
+
 ![alt text](images/image20.png)
 
 
@@ -393,14 +412,13 @@ Mas ainda não terminamos. Clique em `Add agent` novamente. Desta vez, selecione
 
 ![alt text](images/image21.png)
 
-On the next screen, select the `External agent` option and click on `Next`.
 Na próxima tela, selecione a opção `External agent` e clique em `Next`.
 
 ![alt text](images/image22.png)
 
-On the following screen, enter details about the imported agent:
+Na tela entre os datalhes necessários conforme a seguir: 
 - Agent details
-  - Provider: `watsonx.ai`
+  - Provider: `watsonx.ai` ## VOCÊ DEVE ALTERAR DE "external agent" para "watsonx.ai" 
   - Authentication type: deixe `API key`
   - API key: digite a chave fornecida a você pelo seu instrutor
   - URL da instância do serviço: insira o valor fornecido pelo seu instrutor
@@ -428,7 +446,11 @@ Antes de testar este agente, role a tela até o final e verifique se a caixa de 
 
 ![alt text](images/image25.png)
 
-Vamos testar. Como ainda não o abordamos, vamos começar com o agente externo TrafficAgent. Podemos acioná-lo perguntando sobre o trânsito em um determinado local, digamos, Sydney, Austrália. Digite o seguinte na entrada de texto de visualização: "Informe-me sobre o trânsito no centro de Sydney, Austrália." (Você também pode escolher qualquer outro local, é claro.)
+Vamos testar. Como ainda não o abordamos, vamos começar com o agente externo TrafficAgent. Podemos acioná-lo perguntando sobre o trânsito em um determinado local. Digite o seguinte na entrada de texto de visualização: 
+```
+Informe-me sobre o trânsito em Brasília
+(Você também pode escolher qualquer outro local, é claro.)
+```
 
 ![alt text](images/image26.png)
 
@@ -438,10 +460,22 @@ Observe que o agente estava "raciocinando", ou seja, determinando como responder
 
 Observe como ele selecionou o agente de Tráfego para responder à solicitação, o que obviamente foi a escolha certa neste caso.
 
-Agora você pode testar o roteamento para os outros agentes, possivelmente usando os mesmos prompts ou prompts semelhantes aos que você usou anteriormente para testá-los individualmente:
-- "Qual é o status das docas do armazém?"
-- "Como lidamos com o excedente do caminhão T001?"
-- "Crie um e-mail de notificação..."
+Agora você pode testar o roteamento para os outros agentes, possivelmente usando perguntas semelhantes as que você usou anteriormente para testá-los individualmente:
+
+```
+Qual é o status das docas do armazém?
+# O Agente vai perguntar se você quer saber o status de alguma doca específica ou todas. Pode responder "Todas"
+```
+
+```
+Como lidamos com o excedente do caminhão T001?
+# Se o agente perguntar qual SKU pode responder 199464599
+```
+
+```
+Gerar um e-mail de notificação para a equipe de marketing para o SKU: 8932464599 de 10 unidades
+```
+
   
 ![alt text](images/image28.png)
 
