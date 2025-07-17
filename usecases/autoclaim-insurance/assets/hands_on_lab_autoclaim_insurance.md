@@ -91,7 +91,7 @@ O agente de informações buscará notícias e diferentes artigos e usará essas
 
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/information-agent/6-ia.png">
 
-- Faça upload do arquivo `duckduckgo.json` fornecido pelo instrutor
+- Faça upload do arquivo `duckduckgo.json` (Arquivo "duckduckgo.json" dentro da pasta "5. Agente de Sinistros de seguros" gerada após descompactar o LABS.zip) 
 
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/information-agent/7-ia.png">
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/information-agent/8-ia.png">
@@ -163,7 +163,8 @@ O agente de Reclamações do Cliente permitirá que os clientes consultem o stat
   Esta base de conhecimento aborda o tema de seguros e o processo de sinistro. Esta base de conhecimento ajudará o cliente a obter informações sobre o processo de sinistro e as regras e regulamentos de processamento de sinistros de seguro.
   ```
 
-- Faça o Download para o seu computador do arquivo [Automobile Insurance Knowledge Base.pdf](<./data/Automobile Insurance Knowledge Base.pdf>) e depois faça o upload para o agente clicando em  **Upload files** em **Documents**
+- Faça o upload do arquivo Automobile Insurance Knowledge Base (Arquivo "Automobile Insurance Knowledge Base.pdf" dentro da pasta "5. Agente de Sinistros de seguros" gerada após descompactar o LABS.zip) clicando em  **Upload files** em **Documents**
+
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/customer/customer-5.png">
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/customer/customer-6.png">
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/customer/customer-7.png">
@@ -172,7 +173,7 @@ O agente de Reclamações do Cliente permitirá que os clientes consultem o stat
 
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/customer/customer-8.png">
 
-- Clique em **Import**. Importe o arquivo `customer_claims_agent_tools.json` fornecido pelo instrutor
+- Clique em **Import**. Importe o arquivo `customer_claims_agent_tools.json` (Arquivo "customer_claims_agent_tools.json" dentro da pasta "5. Agente de Sinistros de seguros" gerada após descompactar o LABS.zip) 
 
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/customer/customer-9.png">
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/customer/customer-10.png">
@@ -260,7 +261,7 @@ Enviar uma nova reclamação
 ```
    <img width="1000" alt="image" src="./screenshots_hands_on_lab/claim-flow-3.png">
 
-   **OBSERVAÇÃO**: seu instrutor fornecerá um nome do banco de dados implantado para você usar em todas as suas entradas de reivindicação. Insira o nome fornecido. Cada participante precisa usar um nome diferente.
+   **OBSERVAÇÃO**: Escolha um dos nomes da planilha de usuários (Arquivo "Insurance_Database_v1.csv" dentro da pasta "5. Agente de Sinistros de seguros" gerada após descompactar o LABS.zip) 
 
    <img width="1000" alt="image" src="./screenshots_hands_on_lab/claim-flow-4.png">
 
@@ -293,7 +294,7 @@ Verifique o status da reivindicação
 
    <img width="1000" alt="image" src="./screenshots_hands_on_lab/claim-flow-8.png">
 
-Digite o nome que lhe foi fornecido
+Digite o nome que você escolheu
 
    <img width="1000" alt="image" src="./screenshots_hands_on_lab/claim-flow-10.png">
 
@@ -338,7 +339,7 @@ O agente do Processador de Reivindicações auxilia o processador de reivindica�
   ```
   Esta base de conhecimento aborda o tema de seguros e o processo de sinistro. Esta base de conhecimento auxiliará o operador de sinistros a processar os sinistros de acordo com as regras e regulamentos definidos pela seguradora.
   ```
-- Faça o Download do arquivo [Policy.pdf](<./data/Policy.pdf>) e depois o upload clicando em **Upload files** em **Documents**. 
+- Faça o upload do arquivo de Policy (Arquivo "Policy.pdf" dentro da pasta "5. Agente de Sinistros de seguros" gerada após descompactar o LABS.zip) clicando em **Upload files** em **Documents**. 
 
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/claim_processor_insurance_agent/cp-5.0.png">
 
@@ -352,7 +353,7 @@ O agente do Processador de Reivindicações auxilia o processador de reivindica�
 
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/claim_processor_insurance_agent/cp-6.1.png">
 
-- Faça o Upload do arquivo `claim_processor_agent_tools.json` fornecido pelo instrutor
+- Faça o Upload do arquivo `claim_processor_agent_tools.json` (Arquivo "laim_processor_agent_tools.json" dentro da pasta "5. Agente de Sinistros de seguros" gerada após descompactar o LABS.zip) 
 
   <img width="1000" alt="image" src="./screenshots_hands_on_lab/claim_processor_insurance_agent/cp-7.png">
 

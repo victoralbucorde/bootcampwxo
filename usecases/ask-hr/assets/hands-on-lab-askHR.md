@@ -27,10 +27,7 @@ Neste laboratório, construiremos um agente de RH no Watsonx Orchestrate, utiliz
 
 - Verifique com seu instrutor se **todos os sistemas** estão funcionando antes de continuar.
 - Confirme se você tem acesso ao ambiente techzone correto para este laboratório.
-- Confirme se você tem acesso a um arquivo de credenciais que seu instrutor compartilhará com você antes de iniciar os laboratórios.
-- Se você for um instrutor que está ministrando este laboratório, consulte os **Guias do Instrutor** para configurar todos os ambientes e sistemas.
-
-
+- Confirme que você fez o dowload do arquivo LABS.zip 
 
 
 ## Instruções passo a passo para criar agentes:
@@ -77,7 +74,7 @@ Clique em  **Upload files**:
 
 <img width="1000" alt="image" src="hands-on-lab-assets/hr_step5.png">
 
-7. Drag and drop the [Benefícios para funcionários](../../../anexos/rh/Employee-Benefits_ptbr.pdf) e clique em **Upload**:
+7. Clique e arraste o arquivo de Benefícios para funcionários (Arquivo "Employee-Benefits_ptbr.pdf" dentro da pasta "2. AskRH" gerada após descompactar o LABS.zip) e clique em **Upload**:
 
 <img width="1000" alt="image" src="hands-on-lab-assets/hr_step6.png">  
 
@@ -93,7 +90,7 @@ Clique em  **Upload files**:
 
 <img width="1000" alt="image" src="hands-on-lab-assets/step13.png">
 
-11. Arraste e solte ou clique para carregar o arquivo **hr.yaml** (fornecido a você pelo instrutor), então clique em **Next**:
+11. Arraste e solte ou clique para carregar o arquivo **hr.yaml** (Arquivo "hr.yaml" dentro da pasta "2. AskRH" gerada após descompactar o LABS.zip) , então clique em **Next**:
 
 <img width="1000" alt="image" src="hands-on-lab-assets/hr_step10.png">    
 
@@ -117,7 +114,7 @@ Quando o usuário solicitar folga, converta as datas para o formato AAAA-MM-DD. 
 
 14. Teste seu agente no chat de pré-visualização à direita, fazendo as seguintes perguntas e validando as respostas. Elas devem ser semelhantes às mostradas nas capturas de tela abaixo:
 
-> IMPORTANTE: Quando o agente perguntar seu nome você deve utilizar qualquer um disponível em [Planilha de usuários](../../../anexos/rh/users_data.xlsx).
+> IMPORTANTE: Quando o agente perguntar seu nome você deve utilizar qualquer um disponível em na planilha de usuários (Arquivo "users_data.xlsx" dentro da pasta "2. AskRH" gerada após descompactar o LABS.zip) 
 
 ```
 1. Qual é a política para animais de estimação?

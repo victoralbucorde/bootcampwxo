@@ -28,7 +28,7 @@ O departamento de vendas da ABC Motor Corp, uma grande empresa automotiva, ao pr
 
 ## Pre-requisites
 
-- Todos os requisitos foram atendidos.
+- Tenha certeza de ter baixado o arquivo LABS.zip
 
 
 ## Agent Lab - watsonx.ai
@@ -104,7 +104,7 @@ Após a criação do agente.
 
 ## Integrando o agente do watsonx.ai como um Agente Externo no watsonx Orchestrate
 
-To deploy your agent on Orchestrate, follow the steps below: 
+Para implantar seu agente no Orchestrate, siga as etapas abaixo:
 
 1. Acesse a página inicial do watsonx.ai Agent Lab.
 ![Home page](assets/agent_lab_homepage.png)
@@ -161,7 +161,7 @@ Descrição:
    ```
    ![Knowledge](assets/product_knowledge.png)
 
-6. Role para baixo até a seção Conhecimento e, na seção Documento, clique no botão Carregar arquivo e carregue [o catálogo de produtos](../../anexos/businessautomation/ABC_Motor_Product_Catalog_ptbr.pdf).
+6. Role para baixo até a seção Conhecimento e, na seção Documento, clique no botão Carregar arquivo e carregue o arquivo ABC_Motor_Product_Catalog_ptbr (o arquivo "ABC_Motor_Product_Catalog_ptbr.pdf" está disponível na pasta "3. Automacao de Negocio" gerada após a descompactação do arquivo LABS.zip).
 ![Upload file](assets/upload_file.png)
 
 7. Role para baixo até a seção Conjunto de ferramentas e, na seção Agentes, clique no botão Adicionar agente.
@@ -175,7 +175,7 @@ Descrição:
 9. Na próxima página, certifique-se de que a opção Agente Externo esteja selecionada (como mostrado na imagem 1 abaixo). Se ainda não estiver selecionada, selecione-a e clique no botão Avançar (como mostrado na imagem 2).
 ![Select External Agent](assets/external_agent_select.png)
 
-10. Na próxima página, insira as seguintes informações:
+10. Na próxima página, insira as seguintes informações ("API KEY" e "Service Instance URL" está na página que você deixou aberta no browser no início das atividades)
       1. Fornecer: No menu selecione watsonx.ai.
       2. API key: Enter the watsonx.ai API key.
       3. Service instance URL: Insira a URL do ponto de extremidade público do agente que copiamos na etapa 6.

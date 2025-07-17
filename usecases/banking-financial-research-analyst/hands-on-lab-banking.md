@@ -32,6 +32,7 @@ Ao automatizar essas tarefas, a empresa visa acelerar o processo de pesquisa par
 
 ## Pre-requisitos
 Para executar as etapas desta parte do laboratório prático do bootcamp, você precisa ter acesso ao **watsonx Orchestrate** e ao **watsonx.ai**, que são fornecidos a você como parte da preparação para este bootcamp.
+Tenha certeza de ter baixado o arquivo LABS.zip
 
 
 ## watsonx Orchestrate
@@ -119,11 +120,11 @@ Em seguida, você precisa escolher como fornecer informações de conhecimento a
 ![wxo agent config knowledge](images/wxo-agent-config-knowledge.png) 
 
 
-Arraste e solte os seguintes arquivos PDF para enviar ao conhecimento do agente:
-   - [AMZN-Q4-2024-Earnings.pdf](../../anexos/financial/AMZN-Q4-2024-Earnings_ptBR.pdf)
-   - [META-Q4-2024-Earnings.pdf](../../anexos/financial/META-Q4-2024-Earnings_ptBR.pdf)
-   - [NFLX-Q4-2024-Earnings.pdf](../../anexos/financial/NFLX-Q4-2024-Earnings_ptBR.pdf)
-   - [NVDA-Q4-2024-Earnings.pdf](../../anexos/financial/NVDA-Q4-2024-Earnings_ptBR.pdf)
+Arraste e solte os seguintes arquivos PDF para enviar ao conhecimento do agente (todos os arquivos estão na pasta "4. Agente Financeiro" gerada após a descompactação do arquivo LABS.zip)
+   - AMZN-Q4-2024-Earnings_ptBR.pdf
+   - META-Q4-2024-Earnings_ptBR.pdf
+   - NFLX-Q4-2024-Earnings_ptBR
+   - NVDA-Q4-2024-Earnings_ptBR.pdf
 
 ![wxo knowledge upload files](images/wxo-knowledge-upload-files.png) 
 
@@ -186,7 +187,7 @@ O watsonx Orchestrate oferece suporte a várias abordagens para adicionar ferram
 Além disso, você pode usar o [Agentic Development Kit (ADK)](https://developer.watson-orchestrate.ibm.com/) do watsonx Orchestrate para desenvolver e carregar ferramentas Python e OpenAPI em uma instância específica do watsonx Orchestrate, que você pode então adicionar aos agentes.
 O watsonx Orchestrate também suporta a adição de ferramentas do [Model Context Protocol (MCP)](https://developer.watson-orchestrate.ibm.com/). Se você não estiver familiarizado com ele, o MCP é um padrão para conectar agentes de IA a sistemas onde os dados residem, incluindo repositórios de conteúdo, ferramentas de negócios e ambientes de desenvolvimento. O MCP está se tornando cada vez mais popular como o padrão para habilitar agentes com ferramentas.
 
-Para fins do Agente de API Financeira, você usará a opção **Import** para importar uma especificação OpenAPI e definir quais operações importar como ferramentas. Você precisará do arquivo [financial_api_openapi.json](../../anexos/financial/financial_api_openapi.json).
+Para fins do Agente de API Financeira, você usará a opção **Import** para importar uma especificação OpenAPI e definir quais operações importar como ferramentas. Você precisará do arquivo financial_api_openapi.json (o arquivo "financial_api_openapi.json" está na pasta "4. Agente Financeiro" gerada após a descompactação do arquivo LABS.zip).
 
 17- Na página da ferramenta Importar, arraste e solte o arquivo e clique em **Next** (annotated with red arrow).
 
@@ -327,7 +328,7 @@ Este agente pode pesquisar na web para recuperar informações relacionadas à c
 
 ![wxo web search tool import](images/wxo-web-search-tool-import.png) 
 
-29- Na página da ferramenta Importar, arraste e solte o arquivo [websearch_openapi.json](../../anexos/financial/websearch_openapi.json) e clique  **Next**
+29- Na página da ferramenta Importar, arraste e solte o arquivo websearch_openapi.json (o arquivo "websearch_openapi.json" está na pasta "4. Agente Financeiro" gerada após a descompactação do arquivo LABS.zip) e clique  **Next**
 
 ![wxo web search agent tool import openapi](images/wxo-web-search-agent-tool-import-openapi.png) 
 
