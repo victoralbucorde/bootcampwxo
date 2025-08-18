@@ -156,7 +156,11 @@ Nesta seção, você desenvolverá o Agente de API Financeira, um dos agentes co
 
 ![wxo create agent chatUI](images/wxo-create-agent.png) 
 
-17. Na página Criar um agente, selecione **Create from scratch**, provide a **Name** e uma **Description** para o agente e clique **Create** (annotated with red arrow).
+17. Selecione Import from File
+
+![wxo create agent chatUI](images/wxo-create-agent_import.png) 
+
+18. Na página Criar um agente, selecione **Create from scratch**, provide a **Name** e uma **Description** para o agente e clique **Create** (annotated with red arrow).
 
 Name: ```Agente API Financeiro```
 
@@ -168,11 +172,11 @@ Conforme explicado anteriormente, a descrição de um agente é importante, pois
 
 ![wxo create financial api agent](images/wxo-create-financial-api-agent.png) 
 
-15- Na página de configuração do agente, role para baixo até **Toolset** ou clique no atalho (anotado com oval vermelho). Em seguida, clique no botão **Add tool**  (anotado com seta vermelha) para abrir a janela para adicionar ferramentas ao agente.
+19. Na página de configuração do agente, role para baixo até **Toolset** ou clique no atalho (anotado com oval vermelho). Em seguida, clique no botão **Add tool**  (anotado com seta vermelha) para abrir a janela para adicionar ferramentas ao agente.
 
 ![wxo agent tools](images/wxo-agent-tools.png) 
 
-16- No pop-up de opções da ferramenta, selecione **Import** (anotado com retângulo vermelho) conforme ilustrado na figura abaixo.
+20. No pop-up de opções da ferramenta, selecione **Import** (anotado com retângulo vermelho) conforme ilustrado na figura abaixo.
 
 ![wxo tool options](images/wxo-tool-options.png) 
 
@@ -191,17 +195,17 @@ O watsonx Orchestrate também suporta a adição de ferramentas do [Model Contex
 
 Para fins do Agente de API Financeira, você usará a opção **Import** para importar uma especificação OpenAPI e definir quais operações importar como ferramentas. Você precisará do arquivo financial_api_openapi.json (o arquivo "financial_api_openapi.json" está na pasta "4. Agente Financeiro" gerada após a descompactação do arquivo LABS.zip).
 
-17- Na página da ferramenta Importar, arraste e solte o arquivo e clique em **Next** (annotated with red arrow).
+21. Na página da ferramenta Importar, arraste e solte o arquivo e clique em **Next** (annotated with red arrow).
 
 ![wxo tool import openapi](images/wxo-tool-import-openapi.png) 
 
-18- Em seguida, marque as caixas de seleção para as operações **Obter dados de preços de ações**, **Obter informações sobre ações**, **Obter demonstrações financeiras**, **Obter relatório de lucros** e **Pesquisar na Wikipédia** (anotadas com setas vermelhas) e clique em **Done**.
+22. Em seguida, marque as caixas de seleção para as operações **Obter dados de preços de ações**, **Obter informações sobre ações**, **Obter demonstrações financeiras**, **Obter relatório de lucros** e **Pesquisar na Wikipédia** (anotadas com setas vermelhas) e clique em **Done**.
 
 ![wxo tool import operations](images/wxo-tool-import-operations.png) 
 
-19- Neste ponto, você verá as ferramentas importadas na subseção Ferramentas, o que significa que elas estão disponíveis para o **Agente da API Financeira** usar essas ferramentas na execução de tarefas que exigem a recuperação de dados de mercado ou a obtenção de informações de glossário.
+23. Neste ponto, você verá as ferramentas importadas na subseção Ferramentas, o que significa que elas estão disponíveis para o **Agente da API Financeira** usar essas ferramentas na execução de tarefas que exigem a recuperação de dados de mercado ou a obtenção de informações de glossário.
 
-20- Em seguida, role mais para baixo até o **Behavior** ou clique no atalho do **Behavior**  (anotado com oval vermelho) e adicione as seguintes instruções para orientar o agente em seu raciocínio e orquestração.
+24. Em seguida, role mais para baixo até o **Behavior** ou clique no atalho do **Behavior**  (anotado com oval vermelho) e adicione as seguintes instruções para orientar o agente em seu raciocínio e orquestração.
 
 Instruções:
 ```
@@ -272,7 +276,7 @@ Além disso, desative a barra deslizante (indicada pela seta vermelha) para desa
 
 ![wxo financial agent behavior](images/wxo-financial-api-agent-behavior.png)
 
-21- Agora que você concluiu a criação do agente e adicionou as ferramentas necessárias, teste as ferramentas na seção Visualização fazendo uma pergunta de exemplo, como:
+25. Agora que você concluiu a criação do agente e adicionou as ferramentas necessárias, teste as ferramentas na seção Visualização fazendo uma pergunta de exemplo, como:
 
 ```
 qual foi a receita e o lucro da Amazon em 2023?
@@ -282,14 +286,14 @@ Observe a resposta baseada nas informações retornadas pela ferramenta Dados de
 
 ![wxo tool earnings](images/wxo-financial-api-agent-tool-earnings.png) 
 
-22- Teste o **Agente de API Financeira** mais detalhadamente fazendo outra pergunta:
+26. Teste o **Agente de API Financeira** mais detalhadamente fazendo outra pergunta:  
 ```O que significa EBITDA?```
 
 Novamente, observe a resposta e expanda o link **Mostrar raciocínio** para rastrear o raciocínio do agente que, neste caso, acionou corretamente a ferramenta **Pesquisar na Wikipedia** (anotada com um oval vermelho).
 
 ![wxo tool glossary](images/wxo-financial-api-agent-tool-glossary.png) 
 
-23- Neste ponto, clique no botão **Deploy** para implantar o agente e torná-lo disponível para ser usado como um agente colaborador.
+27. Neste ponto, clique no botão **Deploy** para implantar o agente e torná-lo disponível para ser usado como um agente colaborador.
 
 ![wxo financial agent deploy](images/wxo-financial-api-agent-deploy.png) 
 
@@ -302,13 +306,13 @@ A arquitetura faz referência a diversas ferramentas de busca na web, a saber, a
 
 *Opcional* Você pode verificar com seu instrutor se ele também configurou a **Brave Search Tool** e, em seguida, você pode tentar adicioná-la. Se você adicionar a **Brave Search Tool**, precisará atualizar as instruções para o agente recuperar resultados de busca de diversas ferramentas e agregá-los.
 
-24- ISe você não estiver na página inicial do watsonx Orchestrate (interface de bate-papo), repita as etapas anteriores para garantir que você esteja conectado ao IBM Cloud, localize o serviço watsonx Orchestrate e inicie-o para acessar a página inicial.
+28. Se você não estiver na página inicial do watsonx Orchestrate (interface de bate-papo), repita as etapas anteriores para garantir que você esteja conectado ao IBM Cloud, localize o serviço watsonx Orchestrate e inicie-o para acessar a página inicial.
 
-25- Na página inicial do watsonx Orchestrate, que é a interface do usuário do bate-papo, clique em **Create new agent** (anotado com seta vermelha) para começar a criar o Agente de Pesquisa na Web.
+29. Na página inicial do watsonx Orchestrate, que é a interface do usuário do bate-papo, clique em **Create new agent** (anotado com seta vermelha) para começar a criar o Agente de Pesquisa na Web.
 
 ![wxo landing page create agent](images/wxo-landing-page-create-agent.png) 
 
-26- Repita os passos anteriores para criar um agente do zero e forneça o seguinte nome e descrição para o agente de pesquisa na web. Clique em **Create** (indicado pela seta vermelha).
+30. Repita os passos anteriores para criar um agente do zero e forneça o seguinte nome e descrição para o agente de pesquisa na web. Clique em **Create** (indicado pela seta vermelha).
 
 Name: 
 ```
@@ -322,25 +326,29 @@ Este agente pode pesquisar na web para recuperar informações relacionadas à c
 
 ![wxo create web search agent](images/wxo-create-web-search-agent.png) 
 
-27- Na página de configuração do agente, role para baixo até a seção **Toolset** ou clique no atalho **Toolset** shortcut (anotado com oval vermelho) e clique em **Add tool** (anotado com seta vermelha).
+31. Na página de configuração do agente, role para baixo até a seção **Toolset** ou clique no atalho **Toolset** shortcut (anotado com oval vermelho) e clique em **Add tool** (anotado com seta vermelha).
 
 ![wxo web search agent toolset](images/wxo-web-search-agent-toolset.png) 
 
-28- Conforme explicado anteriormente, o Watsonx Orchestrate oferece suporte a diversas abordagens para adicionar ferramentas aos agentes. Para o Agente de Pesquisa na Web, você aproveitará a funcionalidade de **Import** como você fez antes. Clique no **Import** (anotado com retângulo vermelho).
+32. Conforme explicado anteriormente, o Watsonx Orchestrate oferece suporte a diversas abordagens para adicionar ferramentas aos agentes. Para o Agente de Pesquisa na Web, você aproveitará a funcionalidade de **Import** como você fez antes. Clique no **Import** (anotado com retângulo vermelho).
 
 ![wxo web search tool import](images/wxo-web-search-tool-import.png) 
 
-29- Na página da ferramenta Importar, arraste e solte o arquivo websearch_openapi.json (o arquivo "websearch_openapi.json" está na pasta "4. Agente Financeiro" gerada após a descompactação do arquivo LABS.zip) e clique  **Next**
+33. Selecione Import from File
+
+![wxo create agent chatUI](images/wxo-create-agent_import.png) 
+
+34. Na página da ferramenta Importar, arraste e solte o arquivo websearch_openapi.json (o arquivo "websearch_openapi.json" está na pasta "4. Agente Financeiro" gerada após a descompactação do arquivo LABS.zip) e clique  **Next**
 
 ![wxo web search agent tool import openapi](images/wxo-web-search-agent-tool-import-openapi.png) 
 
-30- Em seguida, marque as caixas de seleção para a operação **Obter Resultados de busca com o Tavily**  e clique **Done**
+35. Em seguida, marque as caixas de seleção para a operação **Obter Resultados de busca com o Tavily**  e clique **Done**
 
 ![wxo web search agent tool import operations](images/websearch-duckduckgo.png) 
 
-31- Neste ponto, você verá a ferramenta importada na subseção Ferramentas, o que significa que ela está disponível para o **Agente de Pesquisa na Web** usar essas ferramentas na execução de tarefas que exigem pesquisas na web e recuperação de dados relacionados à consulta do usuário.
+36. Neste ponto, você verá a ferramenta importada na subseção Ferramentas, o que significa que ela está disponível para o **Agente de Pesquisa na Web** usar essas ferramentas na execução de tarefas que exigem pesquisas na web e recuperação de dados relacionados à consulta do usuário.
 
-32- Role mais para baixo até a seção **Behavior** da página de configuração do agente e adicione as seguintes **Instruções** para ajudar a orientar o comportamento do agente.
+37. Role mais para baixo até a seção **Behavior** da página de configuração do agente e adicione as seguintes **Instruções** para ajudar a orientar o comportamento do agente.
 
 Instruções: 
 ```
@@ -351,7 +359,7 @@ Em seguida, teste a funcionalidade do agente fazendo uma pergunta como ```Você 
 
 ![wxo web search agent behavior](images/wxo-web-search-agent-behavior-duckduckgo.png) 
 
-33- Agora que você configurou e testou o **Agente de Pesquisa na Web**, pode implantá-lo para torná-lo acessível como um agente colaborador. Para isso, desative a barra deslizante (indicada pela seta vermelha) para desativar o acesso do **Agente de Pesquisa na Web** na interface de chat. Este agente é apenas um agente de suporte ao **Agente de Analista Financeiro** e, portanto, deve ser desativado para não aparecer na interface de chat.
+38. Agora que você configurou e testou o **Agente de Pesquisa na Web**, pode implantá-lo para torná-lo acessível como um agente colaborador. Para isso, desative a barra deslizante (indicada pela seta vermelha) para desativar o acesso do **Agente de Pesquisa na Web** na interface de chat. Este agente é apenas um agente de suporte ao **Agente de Analista Financeiro** e, portanto, deve ser desativado para não aparecer na interface de chat.
 
 Agora clique em **Deploy** para implantar o agente e torná-lo disponível para ser usado como um agente colaborador.
 
@@ -364,29 +372,29 @@ Agora clique em **Deploy** para implantar o agente e torná-lo disponível para 
 ## Juntando tudo - Colaboração completa do agente <a id="pulling-it-together"></a>
 Agora que você desenvolveu todos os agentes e ferramentas, nesta seção, você trabalhará no processo de integração dos agentes colaboradores, testando e implantando o **Agente de Analista Financeiro**.
 
-34- Se você não estiver na página inicial do watsonx Orchestrate (interface de bate-papo), repita as etapas anteriores para garantir que você esteja conectado ao IBM Cloud, localize o serviço watsonx Orchestrate e inicie-o para acessar a página inicial.
+39. Se você não estiver na página inicial do watsonx Orchestrate (interface de bate-papo), repita as etapas anteriores para garantir que você esteja conectado ao IBM Cloud, localize o serviço watsonx Orchestrate e inicie-o para acessar a página inicial.
 
-35- On the watsonx Orchestrate landing page, which is the Chat UI, click **Manage agents** (anotado com seta vermelha).
+40. Na página inicial do watsonx Orchestrate, que é a interface do usuário do bate-papo, clique em **Manage agents** (anotado com seta vermelha).
 
 ![wxo landing page manage agents](images/wxo-landing-page-manage-agents.png) 
 
-36- Na página manage agents, selecione o **Agente Analista Financeiro** (anotado com retângulo vermelho).
+41. Na página manage agents, selecione o **Agente Analista Financeiro** (anotado com retângulo vermelho).
 
 ![wxo manage agents](images/wxo-manage-agents.png) 
 
-37- Na página de configuração do **Agente de analista financeiro**, role para baixo até a seção **Toolset** ou clique no atalho **Toolset** (anotado com um oval vermelho) e, em seguida, clique em **Add agent** (anotado com uma seta vermelha) para adicionar um agente colaborador.
+42. Na página de configuração do **Agente de analista financeiro**, role para baixo até a seção **Toolset** ou clique no atalho **Toolset** (anotado com um oval vermelho) e, em seguida, clique em **Add agent** (anotado com uma seta vermelha) para adicionar um agente colaborador.
 
 ![wxo financial analyst collaborator agents](images/wxo-financial-analyst-agent-collaborator-agents.png) 
 
-38- No pop-up, selecione **Add from local instance** tile. Para referência, o watsonx Orchestrate oferece suporte a diversas abordagens para adicionar agentes de colaboração. Reserve um minuto para consultar a documentação [Adicionando agentes para orquestração](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/current?topic=agents-adding-orchestration) para obter uma visão geral das diferentes abordagens, incluindo a opção de adicionar um agente de colaboração a partir de um catálogo completo de agentes pré-criados ou de outros agentes definidos na instância local, ou até mesmo importar um agente externo.
+43. No pop-up, selecione **Add from local instance** tile. Para referência, o watsonx Orchestrate oferece suporte a diversas abordagens para adicionar agentes de colaboração. Reserve um minuto para consultar a documentação [Adicionando agentes para orquestração](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/current?topic=agents-adding-orchestration) para obter uma visão geral das diferentes abordagens, incluindo a opção de adicionar um agente de colaboração a partir de um catálogo completo de agentes pré-criados ou de outros agentes definidos na instância local, ou até mesmo importar um agente externo.
 
 ![wxo collaborator agent options](images/wxo-collaborator-agents-options.png) 
 
-39- Marque a caixa de seleção ao lado de **Agente de Pesquisa na Web** e **Agente de API Financeira** (anotado com setas vermelhas) e clique no botão **Adicionar ao agente** (anotado com oval vermelho).
+44. Marque a caixa de seleção ao lado de **Agente de Pesquisa na Web** e **Agente de API Financeira** (anotado com setas vermelhas) e clique no botão **Adicionar ao agente** (anotado com oval vermelho).
 
 ![wxo financial analyst add collaborators](images/wxo-financial-analyst-add-collaborators.png) 
 
-40- Role mais para baixo até o **Behavior** ou clique no atalho do **Behavior**  (anotado com oval vermelho) e adicione as seguintes **Instruções** para orientar o agente em seu raciocínio e orquestração.
+45. Role mais para baixo até o **Behavior** ou clique no atalho do **Behavior**  (anotado com oval vermelho) e adicione as seguintes **Instruções** para orientar o agente em seu raciocínio e orquestração.
 
 Instruções:
 ```
@@ -463,7 +471,7 @@ Expanda os links **Show Reasoning** e **Step 1** para revisar o raciocínio do a
 
 ![wxo knowledge base test](images/wxo-knowledge-base-test.png) 
 
-41- Continue testando seu agente agora, enfatizando a funcionalidade do agente de busca na web. Para isso, faça a seguinte pergunta:
+46. Continue testando seu agente agora, enfatizando a funcionalidade do agente de busca na web. Para isso, faça a seguinte pergunta:
 
 Pergunta:
 ```
@@ -473,7 +481,7 @@ Quem são os principais executivos da Amazon?
 Expanda os links **Show Reasoning** e **Step 1** (indicado com setas vermelhas) para observar o raciocínio do agente. Observe que ele transfere a solicitação para o **Agente de Pesquisa na Web** conforme o esperado (indicado com um oval vermelho).
 ![wxo topexecs reasoning](images/wxo-topexecs-reasoning.png) 
 
-42- Faça mais testes perguntando ao agente a seguinte pergunta e, em seguida, expandindo **Mostrar Raciocínio** e **Etapa 1** (indicados com setas vermelhas) para observar o raciocínio do agente.
+47. Faça mais testes perguntando ao agente a seguinte pergunta e, em seguida, expandindo **Mostrar Raciocínio** e **Etapa 1** (indicados com setas vermelhas) para observar o raciocínio do agente.
 Pergunta:
 ```
 O que significa EBITDA?
@@ -486,7 +494,7 @@ Depois disso, expanda **Step 2** (anotado com seta vermelha) para observar o seg
 
 ![wxo reasoning ebitda step2](images/wxo-reasoning-ebitda-step2.png) 
 
-43- Neste ponto, você está pronto para implementar seu **Agente de Analista Financeiro**. Para isso, role até o final da página de configuração e certifique-se de que a barra deslizante ao lado de **Mostrar agente** (indicada com uma seta vermelha) esteja habilitada (verde) para tornar o **Agente de Analista Financeiro** acessível na interface de chat. Clique no botão **Implementar** (indicado com uma seta vermelha) para implementar seu agente.
+48. Neste ponto, você está pronto para implementar seu **Agente de Analista Financeiro**. Para isso, role até o final da página de configuração e certifique-se de que a barra deslizante ao lado de **Mostrar agente** (indicada com uma seta vermelha) esteja habilitada (verde) para tornar o **Agente de Analista Financeiro** acessível na interface de chat. Clique no botão **Implementar** (indicado com uma seta vermelha) para implementar seu agente.
 
 ![wxo financial analyst agent deploy](images/wxo-financial-analyst-agent-deploy.png)
 
@@ -496,11 +504,11 @@ Depois disso, expanda **Step 2** (anotado com seta vermelha) para observar o seg
 
 Agora que você implantou seu **Agente de Analista Financeiro**, você pode interagir com o agente usando a Interface Conversacional do Watsonx Orchestrate.
 
-44- Clique no menu de navegação superior esquerdo e selecione **Chat** (anotado com retângulo vermelho) para acessar a interface de conversação.
+49. Clique no menu de navegação superior esquerdo e selecione **Chat** (anotado com retângulo vermelho) para acessar a interface de conversação.
 
 ![wxo chat ui](images/wxo-chat-ui.png)
 
-45- Na interface do **Chat**, observe que agora você tem o **Agente Analista Financeiro** (indicado com um retângulo vermelho) como um dos agentes disponíveis para conversar. À medida que você adiciona mais agentes, pode selecionar com qual agente deseja interagir selecionando a lista suspensa de agentes (indicada com uma seta vermelha).
+50. Na interface do **Chat**, observe que agora você tem o **Agente Analista Financeiro** (indicado com um retângulo vermelho) como um dos agentes disponíveis para conversar. À medida que você adiciona mais agentes, pode selecionar com qual agente deseja interagir selecionando a lista suspensa de agentes (indicada com uma seta vermelha).
 Com o **Agente Analista Financeiro** selecionado, tente interagir fazendo a seguinte pergunta e observe a resposta.
 
 Pergunta:
@@ -509,11 +517,11 @@ Tenho interesse em saber mais sobre a Meta e a Amazon. Com base em nosso conheci
 ```
 ![wxo chat q1](images/wxo-chat-q1.png)
 
-46- Expanda o **Show Reasoning** e **Step 1**  (indicado com setas vermelhas) para investigar o raciocínio do agente ao recuperar a resposta. Nesse caso, o agente utiliza sua base de conhecimento para responder.
+51. Expanda o **Show Reasoning** e **Step 1**  (indicado com setas vermelhas) para investigar o raciocínio do agente ao recuperar a resposta. Nesse caso, o agente utiliza sua base de conhecimento para responder.
 
 ![wxo chat q1 reasoning](images/wxo-chat-q1-reasoning.png)
 
-47- Em seguida, faça a seguinte pergunta para obter uma lista dos principais executivos da Amazon.
+52. Em seguida, faça a seguinte pergunta para obter uma lista dos principais executivos da Amazon.
 Pergunta:
 ```
 Quem são os principais executivos da Amazon?
@@ -524,16 +532,16 @@ Novamente, expanda o **Show Reasoning** e **Step 1** (indicado com setas vermelh
 
 ![wxo chat q2 reasoning](images/wxo-chat-q2-reasoning.png)
 
-48- Em seguida, tente outra pergunta para obter uma definição do glossário para o lucro diluído por ação, que foi retornada na primeira resposta.
+53. Em seguida, tente outra pergunta para obter uma definição do glossário para o lucro diluído por ação, que foi retornada na primeira resposta.
 Pergunta:
 ```
-Você pode definir o termo financeiro do glossário "Lucro diluído por ação"?
+Você pode definir o termo financeiro do glossário "Diluted earnings per share"? 
 ```
 
 Expanda o **Show Reasoning** e observe que o agente deu 3 passos (anotados com retângulo vermelho) para recuperar a resposta para esta pergunta.
 ![wxo chat q3](images/wxo-chat-q3.png)
 
-49- Agora, vamos tentar explorar quais são as etapas executadas.
+54. Agora, vamos tentar explorar quais são as etapas executadas.
 Expanda as seções **Step1**, **Step2** e **Step3** e observe o agente transferindo a solicitação ao **Agente da API Financeira** para fornecer uma definição para o termo financeiro 'Lucro por ação diluído'.
 
 ![wxo chat q3 reasoning 1](images/wxo-chat-q3-reasoning-1.png)
