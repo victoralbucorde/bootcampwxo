@@ -61,23 +61,31 @@ Clique em **Create**:
 
 <img width="1000" alt="image" src="hands-on-lab-assets/step_5_v2.png">
 
-6. Role a tela para baixo até a seção **Knowledge**. Copie a seguinte descrição na seção **Knowledge Description**:
+6. Role a tela para baixo até a seção **Knowledge**. Clique em **Choose knowledge**.
+
+<img width="1000" alt="image" src="hands-on-lab-assets/step_6_v3.png">
+
+7. Clique em  **Upload files** e depois **Next**
+
+<img width="1000" alt="image" src="hands-on-lab-assets/step_7_v3.png">
+
+8. Clique e arraste o arquivo de Benefícios para funcionários (Arquivo "Employee-Benefits_ptbr.pdf" dentro da pasta "2. AskRH" gerada após descompactar o LABS.zip) e clique em **Upload**:
+
+<img width="1000" alt="image" src="hands-on-lab-assets/step_8_v3.png">  
+
+9. Copie a seguinte descrição na seção Descrição e clique em Salvar:
 
 ```
 Esta base de conhecimento aborda os benefícios dos funcionários da empresa, incluindo licenças-maternidade, política de animais de estimação, acordos de trabalho flexíveis e pagamento de empréstimos estudantis.
 ```
 
-Clique em  **Upload files**:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/step_7_v3.png">
 
-7. Clique e arraste o arquivo de Benefícios para funcionários (Arquivo "Employee-Benefits_ptbr.pdf" dentro da pasta "2. AskRH" gerada após descompactar o LABS.zip) e clique em **Upload**:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step6.png">  
 
-8. Aguarde até que o arquivo seja carregado com sucesso e verifique novamente se ele agora é exibido na seção Knowledge:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step7.png">  
+
+ 
 
 9. Role para baixo até a seção **Toolset**. Clique em **Add tool +**:
 
