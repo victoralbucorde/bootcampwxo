@@ -26,9 +26,14 @@ Então, aproveite o conteúdo, explore bastante e, sempre que possível, experim
 
 PASSO 1: Clique no botão abaixo para obter as informações necessárias durante a execução dos laboratórios<br>
 <p>
-  <a href="docs/req/turma1/labs.md" target="_blank">
-    <img src="https://img.shields.io/badge/👩‍🎓👨‍🎓 LABS%20-blue?style=for-the-badge" alt="Grupo 1">
-  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://bootcampwxo.github.io/bootcampwxo/random.html" target="_blank">
+    <img src="https://img.shields.io/badge/👩‍🎓👨‍🎓 LABS%20-blue?style=for-the-badge" 
+         alt="Dados de Acesso"
+         style="transform: scale(1.5);">
+  </a>
+</p>
+
+
 
 PASSO 2: Faça o setup inicial <br>
 [SETUP INICIAL - COMEÇAR POR AQUI](usecases/setup.md)<br>
