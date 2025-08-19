@@ -31,27 +31,27 @@
 
 ## 🔍 Introdução
 
-Welcome to the GFM Bank Agentic AI Lab! In this hands-on workshop, you'll transform a traditional banking application into a modern, AI-powered solution using **watsonx Orchestrate**. The banking industry is undergoing rapid digital transformation, and GFM Bank is leading the way by implementing innovative AI agents to handle customer interactions.
+Bem-vindo ao Laboratório de IA Agentic do GFM Bank! Neste workshop prático, você transformará um aplicativo bancário tradicional em uma solução moderna e alimentada por IA usando o **watsonx Orchestrate**. O setor bancário está passando por uma rápida transformação digital, e o GFM Bank está liderando o caminho implementando agentes de IA inovadores para lidar com as interações com os clientes.
 
-GFM Bank faces challenges with traditional teller and back-office operations that are manual, time-consuming, and often result in long customer wait times. By implementing an Agentic AI solution, the bank aims to:
+O GFM Bank enfrenta desafios com as operações tradicionais de caixa e back-office que são manuais, demoradas e muitas vezes resultam em longos tempos de espera do cliente. Ao implementar uma solução de IA Agentic, o banco pretende:
 
-- Provide 24/7 customer support for common banking operations
-- Reduce wait times for transactions and approvals
-- Maintain strict compliance with banking regulations
-- Improve customer satisfaction through faster service
-- Free up human staff to handle more complex customer needs
+  - Fornecer suporte ao cliente 24 horas por dia, 7 dias por semana, para operações bancárias comuns
+  - Reduza os tempos de espera para transações e aprovações
+  - Manter a estrita conformidade com os regulamentos bancários
+  - Melhore a satisfação do cliente através de um serviço mais rápido
+  - Libere a equipe humana para lidar com necessidades mais complexas do cliente
 
-In this lab, you'll build a system of collaborating AI agents that can handle banking operations, including:
+Neste laboratório, você construirá um sistema de agentes de IA colaboradores que podem lidar com operações bancárias, incluindo:
 
-- Account balance inquiries
-- Money transfers between accounts
-- Overdraft limit approvals
-- Fee reversals
-- Product information requests
+  - Consultas sobre o saldo da conta
+  - Transferências de dinheiro entre contas
+  - Aprovações de limite de cheque especial
+  - Reversões de taxas
+  - Solicitações de informações sobre o produto
 
 ## 📊 Operações Bancárias
 
-*Currently, GFM Bank relies on human tellers for basic transactions and back-office staff for approvals, leading to delays and inconsistent customer experiences in peak season.*
+Atualmente, o GFM Bank conta com caixas humanos para transações básicas e equipe de back-office para aprovações, levando a atrasos e experiências inconsistentes com os clientes na alta temporada.*
 
 ### Cenário do Usuário Atual
 John, um cliente do GFM Bank, precisa fazer um pagamento urgente de €8.000, mas ele só tem €5.000 em sua conta. 
