@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>-</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>-</title>
+<style>
     html {
       line-height: 1.5;
       font-family: Georgia, serif;
@@ -161,23 +162,23 @@ LABS</h2>
 <p>Siga os passos abaixo:</p>
 <ol type="1">
 <li>Faça o download do aquivo LABS.zip para o seu compudador clicando no
-link abaixo:<br></li>
+link abaixo:<br/></li>
 </ol>
 <p>https://ibm.biz/BdeEFb</p>
 <ol start="2" type="1">
-<li>Descompacte o arquivo zip <br></li>
+<li>Descompacte o arquivo zip <br/></li>
 </ol>
 <ul>
 <li>Clique com o botão direito do mouse sobre o arquivo e selecione
 “Extract All” ou “Extrair Tudo”</li>
 </ul>
-<p><img width="1000" alt="image" src="extrair.png"></p>
+<p><img alt="image" src="https://bootcampwxo.github.io/bootcampwxo/req/turma2/extrair.png" width="1000"/></p>
 <ul>
 <li>Será gerada uma estrutura de diretórios conforme figura abaixo. Cada
 pasta contém os arquivos necessários para os laboratórios
 correspondentes.</li>
 </ul>
-<p><img width="1000" alt="image" src="estrutura1.png"></p>
+<p><img alt="image" src="https://bootcampwxo.github.io/bootcampwxo/req/turma2/estrutura1.png" width="1000"/></p>
 <ol start="3" type="1">
 <li>Durante a execuçãodos labs, o agente irá solicitar algumas
 informações (Nome, número de conta, etc). Utilize o botão abaixo para
@@ -185,9 +186,35 @@ solicitar as informações que você pode usar</li>
 </ol>
 <p>
 <a href="https://bootcampwxo.github.io/bootcampwxo/wxo_ai_agent_la1x.html" target="_blank">
-<img src="https://img.shields.io/badge/🤖 🤖 Consulta DadosLABS%20-blue?style=for-the-badge" 
-         alt="Dados de Acesso"
-         style="transform: scale(1.5);"> </a>
+<img alt="Dados de Acesso" src="https://img.shields.io/badge/🤖 🤖 Consulta DadosLABS%20-blue?style=for-the-badge" style="transform: scale(1.5);"/> </a>
 </p>
-</body>
+<div id="root">
+</div><script>
+  window.wxOConfiguration = {
+    orchestrationID: "20240520-1149-0230-601a-ac533db16138_20250528-1749-3727-6091-a6e9a5607ebd",//"20240520-1149-0230-601a-ac533db16138:20250528-1749-3727-6091-a6e9a5607ebd", // Adds control over chat display mode (e.g., fullscreen)
+    hostURL: "https://dl.watson-orchestrate.ibm.com", // or region-specific host
+    rootElementID: "root",
+    showLauncher: false,
+    chatOptions: {
+      agentId: "597cea78-5a90-475c-ae77-61fabbde99db",//"3f9df689-a6b7-40f3-b229-885a3bf7e800",
+      agentEnvironmentId: "871efde7-0746-472a-8297-67f393f65785", //"b333bcb2-3ec2-4d76-8933-995f06626273"
+    },
+    layout: {
+//      form: "fullscreen-overlay", // Options: float | custom | fullscreen-overlay - if not specified float is default
+      form: "float", // Options: float | custom | fullscreen-overlay - if not specified float is default
+      showOrchestrateHeader: true, // Optional: shows top agent header bar
+      width: "600px", // Optional: honored when form is float only
+      height: "600px", // Optional: honored when form is float only
+    },
+  };
+
+  setTimeout(function () {
+    const script = document.createElement("script");
+    script.src = `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
+    script.addEventListener("load", function () {
+      wxoLoader.init();
+    });
+    document.head.appendChild(script);
+  }, 0);
+</script></body>
 </html>
