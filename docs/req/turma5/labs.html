@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="pandoc" name="generator"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
-<title>-</title>
+<title>Wxo Bootcamp</title>
 <style>
     html {
       line-height: 1.5;
@@ -185,6 +185,27 @@ img {
 /* Defensive: if any full-screen overlay gets injected, allow page scroll underneath */
 [style*="position: fixed"][style*="top: 0"][style*="left: 0"][style*="width: 100%"][style*="height: 100%"] {
   overscroll-behavior: contain;
+}
+</style><style>
+html, body {
+  background: url('IBM_watsonx.png') no-repeat center center fixed;
+  background-size: cover;
+}
+</style><style>
+html, body {
+  position: relative;
+  z-index: 0;
+}
+
+html::before, body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* overlay escuro translúcido */
+  z-index: -1;
 }
 </style></head>
 <body>
