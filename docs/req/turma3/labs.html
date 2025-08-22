@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<head><base href="https://bootcampwxo.github.io/bootcampwxo/req/turma2/"/>
 <meta charset="utf-8"/>
 <meta content="pandoc" name="generator"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
@@ -155,7 +155,38 @@
     ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-</head>
+<style>
+/* Force normal page scrolling */
+html, body {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-y: auto !important;
+}
+
+/* Ensure body is not locked in flex or 100vh layouts by injected CSS */
+body {
+  display: block !important;
+}
+
+/* Keep images responsive; prevents oversized images from creating layout issues */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Place agent root as a floating widget in corner to avoid blocking content */
+#root {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* Defensive: if any full-screen overlay gets injected, allow page scroll underneath */
+[style*="position: fixed"][style*="top: 0"][style*="left: 0"][style*="width: 100%"][style*="height: 100%"] {
+  overscroll-behavior: contain;
+}
+</style></head>
 <body>
 <h2 id="dados-necessários-para-os-labs">DADOS NECESSÁRIOS PARA OS
 LABS</h2>
@@ -172,13 +203,13 @@ link abaixo:<br/></li>
 <li>Clique com o botão direito do mouse sobre o arquivo e selecione
 “Extract All” ou “Extrair Tudo”</li>
 </ul>
-<p><img alt="image" src="https://bootcampwxo.github.io/bootcampwxo/req/turma2/extrair.png" width="1000"/></p>
+<p><img alt="image" src="extrair.png" width="1000"/></p>
 <ul>
 <li>Será gerada uma estrutura de diretórios conforme figura abaixo. Cada
 pasta contém os arquivos necessários para os laboratórios
 correspondentes.</li>
 </ul>
-<p><img alt="image" src="https://bootcampwxo.github.io/bootcampwxo/req/turma2/estrutura1.png" width="1000"/></p>
+<p><img alt="image" src="estrutura1.png" width="1000"/></p>
 <ol start="3" type="1">
 <li>Durante a execuçãodos labs, o agente irá solicitar algumas
 informações (Nome, número de conta, etc). Utilize o botão abaixo para
