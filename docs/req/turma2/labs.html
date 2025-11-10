@@ -61,7 +61,7 @@ LABS</h2>
 <li>Faça o download do aquivo LABS.zip para o seu compudador clicando no
 link abaixo:<br/></li>
 </ol>
-<p><a href="https://ibm.biz/BdeEFb" target="_blank">https://ibm.biz/BdeEFb</a></p>
+<p><a href="https://bucket-wxo.s3.us-south.cloud-object-storage.appdomain.cloud/LABS2.zip" target="_blank">https://ibm.biz/BdeEFb</a></p>
 <ol start="2" type="1">
 <li>Descompacte o arquivo zip <br/></li>
 </ol>
@@ -85,15 +85,15 @@ informações (Nome, número de conta, etc). <span style="font-weight:bold; colo
 <img alt="Dados de Acesso" src="https://img.shields.io/badge/🤖 🤖 Consulta DadosLABS%20-blue?style=for-the-badge" style="transform: scale(1.5);"/> </a>
 </p>
 <div id="root">
-</div><script>
+</div>
+<script>
   window.wxOConfiguration = {
-    orchestrationID: "20240520-1149-0230-601a-ac533db16138_20250528-1749-3727-6091-a6e9a5607ebd",//"20240520-1149-0230-601a-ac533db16138:20250528-1749-3727-6091-a6e9a5607ebd", // Adds control over chat display mode (e.g., fullscreen)
-    hostURL: "https://dl.watson-orchestrate.ibm.com", // or region-specific host
+    orchestrationID: "20240520-1149-0230-601a-ac533db16138_20250528-1749-3727-6091-a6e9a5607ebd",
+    hostURL: "https://dl.watson-orchestrate.ibm.com",
     rootElementID: "root",
-    showLauncher: false,
     chatOptions: {
-      agentId: "597cea78-5a90-475c-ae77-61fabbde99db",//"3f9df689-a6b7-40f3-b229-885a3bf7e800",
-      agentEnvironmentId: "871efde7-0746-472a-8297-67f393f65785", //"b333bcb2-3ec2-4d76-8933-995f06626273"
+        agentId: "c6c362b3-4d38-4863-ba37-cb628bd076ca", 
+        agentEnvironmentId: "399803c4-7402-4199-a361-cd880aacec3f",
     },
     layout: {
 //      form: "fullscreen-overlay", // Options: float | custom | fullscreen-overlay - if not specified float is default
@@ -103,14 +103,14 @@ informações (Nome, número de conta, etc). <span style="font-weight:bold; colo
       height: "600px", // Optional: honored when form is float only
     },
   };
-
   setTimeout(function () {
-    const script = document.createElement("script");
+    const script = document.createElement('script');
     script.src = `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
-    script.addEventListener("load", function () {
-      wxoLoader.init();
+    script.addEventListener('load', function () {
+        wxoLoader.init();
     });
     document.head.appendChild(script);
   }, 0);
-</script></body>
+  </script>
+</body>
 </html>
